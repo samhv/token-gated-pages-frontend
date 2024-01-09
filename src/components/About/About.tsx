@@ -60,9 +60,11 @@ export function About() {
               <p className="underline mt-4 mb-0.5">What improvements can be done?</p>
               <p>Also there are a ton of them!, few of them are:</p>
               <ul>
+              <li><strong>API service</strong>: We are currently just using fetch and no using local storage / cache at all. We should create a service for it, if we were using Graphql we could just be using Relay or Apollo for example.</li>
                 <li><strong>Routing</strong>: For simplicity we built RouteProvider, but we aren't using routing at all!, so similar to our api we could have routes like "/pages", "/pages/21", and so and so forth. Then, we can split the code on "components/" and "pages/".</li>
                 <li><strong>System design components</strong>: We have a ton of duplicated css that can be abstracted on UI components.</li>
-                <li><strong>Form validation</strong>: Title and decription should be required.</li>
+                <li><strong>Add better loading states</strong>: Add some shimmer or so.</li>
+                <li><strong>Form validation</strong>: Title and decription should be required. And we should validate collection address.</li>
                 <li><strong>WYSIWYG</strong>: Yeah, it could be pretty cool. We have to use an iframe, so we could have a mobile view too.</li>
               </ul>
             </Comment.Body>

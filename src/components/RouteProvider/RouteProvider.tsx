@@ -10,7 +10,7 @@ export enum ROUTES {
 type Route = {
     page: ROUTES,
     params: {
-        [key: string]: string
+        [key: string]: number
     }
 }
 
