@@ -31,7 +31,10 @@ const initialState = {
     params: {},
 };
 
-const StoreContext = createContext({
+const StoreContext = createContext<{
+    route: Route,
+    setRoute: (route: Route) => void,
+}>({
     route: initialState,
     setRoute: (route: Route) => { route },
 });

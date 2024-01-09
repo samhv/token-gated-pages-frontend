@@ -13,7 +13,9 @@ export function Content() {
             return <IndexPage />
         case(ROUTES.CREATE_PAGE):
             return <CreatePage />
-        case(ROUTES.INDEX_PAGES):
+        case(ROUTES.SHOW_PAGE):
             return <ShowPage />
+        default:
+            return <IndexPage />
     }
 }
