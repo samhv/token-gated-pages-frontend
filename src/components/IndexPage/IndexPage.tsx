@@ -7,7 +7,7 @@ export function IndexPage() {
             <h1 className="text-3xl lg:text-4xl pb-1">
                 NFT Gated Pages
             </h1>
-            <p className="max-w-[800px]">Access-gating app that allows users to create pages exclusively accessible by owners of specific NFTs. Imagine a world where owning a digital asset can grant you access to exclusive content, tailored just for you!</p>
+            <p className="max-w-[800px] opacity-70">Access-gating app that allows users to create pages exclusively accessible by owners of specific NFTs. Imagine a world where owning a digital asset can grant you access to exclusive content, tailored just for you!</p>
             <div className="flex flex-col items-center justify-center">
                 <button onClick={() => setRoute({
                     page: ROUTES.CREATE_PAGE,

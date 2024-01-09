@@ -62,6 +62,7 @@ export function About() {
               <ul>
                 <li><strong>Routing</strong>: For simplicity we built RouteProvider, but we aren't using routing at all!, so similar to our api we could have routes like "/pages", "/pages/21", and so and so forth. Then, we can split the code on "components/" and "pages/".</li>
                 <li><strong>System design components</strong>: We have a ton of duplicated css that can be abstracted on UI components.</li>
+                <li><strong>Form validation</strong>: Title and decription should be required.</li>
                 <li><strong>WYSIWYG</strong>: Yeah, it could be pretty cool. We have to use an iframe, so we could have a mobile view too.</li>
               </ul>
             </Comment.Body>
