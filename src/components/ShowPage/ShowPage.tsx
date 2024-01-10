@@ -4,6 +4,7 @@ import { ROUTES, useRoute } from "../RouteProvider"
 import { useAccount } from "wagmi"
 import { ConnetWalletButton } from "../ConnetWalletButton"
 import { BackButton } from "../BackButton"
+import { API_URL } from "../../constans"
 
 export function ShowPage() {
     const { signMessageAsync } = useSignMessage()
@@ -24,7 +25,7 @@ export function ShowPage() {
                     user_address: address,
                     signed_message: signature,
                 }).toString();
-                const response = await fetch(`http://localhost:3000/pages/${pageId}?${queryParams}`, {
+                const response = await fetch(`${API_URL}/pages/${pageId}?${queryParams}`, {
                     method: 'GET',
                 });
         

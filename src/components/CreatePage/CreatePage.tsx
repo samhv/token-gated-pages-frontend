@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useAccount } from "wagmi"
 import { BackButton } from "../BackButton"
 import { ROUTES, useRoute } from "../RouteProvider"
+import { API_URL } from "../../constans"
 
 export function CreatePage() {
     const { setRoute } = useRoute()
@@ -18,7 +19,7 @@ export function CreatePage() {
         }
         setDisabled(true)
         try {
-          const response = await fetch('http://localhost:3000/pages', {
+          const response = await fetch(`${API_URL}/pages`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
