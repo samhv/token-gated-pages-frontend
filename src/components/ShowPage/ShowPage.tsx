@@ -88,22 +88,22 @@ export function ShowPage() {
         return (
             <div>
                 <BackButton onClick={back} />
-                <p className="mt-5 opacity-70 min-h-[320px] min-w-[320px] flex items-center justify-center">Loading content...</p>
+                <p className="mt-5 opacity-70 min-h-[min(320px, 100%)] min-w-[min(320px, 100%)] flex items-center justify-center">Loading content...</p>
             </div>
         )
     }
 
     return (
-        <div>
+        <div className="break-words">
             <BackButton onClick={back} />
-            <h1 className="font-semibold text-lg mt-5 text-2xl">{page.title}</h1>
-            <p className="opacity-70 mt-1">Collection: {page.collection_address}</p>
-            <p className="opacity-70 mt-1">Created by {page.owner_address}</p>
-            <p className="opacity-70 pt-5 mt-1">
+            <h1 className="font-semibold text-xl mt-5 lg:text-2xl">{page.title}</h1>
+            <p className="opacity-70 text-sm sm:text-sm md:text-md lg:text-base mt-1">Collection: {page.collection_address}</p>
+            <p className="opacity-70 text-sm sm:text-sm md:text-md lg:text-base mt-1">Created by {page.owner_address}</p>
+            <p className="opacity-70 text-sm sm:text-sm md:text-md lg:text-base pt-5 mt-1">
                 You have access to the secret content:
             </p>
             <div className="mt-1 p-5 border border-black rounded-md">
-                <p className="opacity-70">{page.description}</p>
+                <p className="opacity-70 text-sm sm:text-sm md:text-md lg:text-base">{page.description}</p>
             </div>
         </div>
     )

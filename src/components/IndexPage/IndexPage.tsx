@@ -8,7 +8,7 @@ export function IndexPage() {
     const { isConnected } = useAccount()
 
     return (
-        <div>
+        <div className="w-full">
             <h1 className="text-3xl lg:text-4xl pb-1">
                 NFT Gated Pages
             </h1>
