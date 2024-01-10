@@ -88,7 +88,7 @@ export function ShowPage() {
         return (
             <div>
                 <BackButton onClick={back} />
-                <p className="mt-5 opacity-70">Loading content...</p>
+                <p className="mt-5 opacity-70 min-h-[320px] min-w-[320px] flex items-center justify-center">Loading content...</p>
             </div>
         )
     }

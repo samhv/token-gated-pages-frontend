@@ -11,7 +11,7 @@ export function ListOfPages() {
     useLayoutEffect(() => {
         const loadPages = async () => {
             try {
-                const response = await fetch(`${API_URL}/page`, {
+                const response = await fetch(`${API_URL}/pages`, {
                     method: 'GET',
                 });
         
