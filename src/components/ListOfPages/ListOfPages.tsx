@@ -44,7 +44,7 @@ export function ListOfPages() {
                             })}
                         >
                             <div className="cursor-pointer mt-10 p-5 hover:shadow-sm border transition-shadow border-slate-500 hover:border-black rounded-lg max-w-[100%] break-words flex flex-row justify-between">
-                                <div>
+                                <div className="flex flex-1 flex-col max-w-[85%] lg:max-w-full">
                                     <p className="font-semibold text-md md:text-lg">{page.title}</p>
                                     <p className="opacity-70 text-sm sm:text-sm md:text-md lg:text-base mt-0.5">Created by: {page.owner_address}</p>
                                     <p className="opacity-70 text-sm sm:text-sm md:text-md lg:text-base mt-0.5">Collection: {page.collection_address}</p>
