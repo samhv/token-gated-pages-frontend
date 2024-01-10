@@ -1,3 +1,11 @@
-Single-page application, built in React, that connects to the bitmex `XBTUSDT` public websocket feed and displays the price feed as an orderbook.
+# NFT gated content
 
-<img width="865" alt="Screenshot 2024-01-07 at 11 34 58 PM" src="https://github.com/samhv/exchange-order-book/assets/5297963/535f14d7-1a54-4aaa-8339-3191395ab4ee">
+Access-gating app that allows users to create content exclusively accessible by owners of specific NFTs. Imagine a world where owning a digital asset can grant you access to exclusive content, tailored just for you!
+
+## Run it
+
+```
+nvm use
+npm install
+npm run dev
+```
